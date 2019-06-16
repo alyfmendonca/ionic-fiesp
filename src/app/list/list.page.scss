@@ -1,0 +1,22 @@
+h3{
+    text-align: center;
+    color: #acacac;
+    font-weight: 500;
+    font-size: 18px;
+}
+.around-option {
+    width: 35%;
+    height: auto;
+    border-radius: 5px;
+    background: #167dcb;
+    float: left;
+    margin-left: 8%;
+    margin-top: 15px;
+}
+.around-option{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    color: #fff;
+}

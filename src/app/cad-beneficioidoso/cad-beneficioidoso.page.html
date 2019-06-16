@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/novo-requerimento"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+          Bem vindo, {{usuario}}
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <h3>Beneficio assistencial ao idoso:</h3>
+  </div>
+  <div>
+    <h4>
+        Dados do requerente
+    </h4>
+    <form (ngSubmit)="logForm()">
+        <ion-input placeholder="Joao da Silva" [(ngModel)]="auth.login" name="login" type="text" pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" style="color: black"></ion-input>
+
+        <ion-input placeholder="435.262.969-53" type="text" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="97347-9509" type="tel" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Telefone 1" type="tel" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Telefone 2" type="tel" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Casado" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Cor/Raça" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Nacionalidade" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Escolaridade" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Av. Paulista 2444" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Bairro Paulista" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="03424-242" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="Sao Paulo" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-input placeholder="SP" type="email" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-button expand="block" type="submit">Confirmar</ion-button>
+      </form>
+  </div>
+</ion-content>

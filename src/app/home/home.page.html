@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title>
+      
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div class="main-content">
+      <div class="image-line"> 
+        <img src="../../assets/Brasil_Cidadao_logo.png" />
+      </div>
+      <h3>Acesse sua conta:</h3>
+      <form (ngSubmit)="logForm()">
+        <ion-input placeholder="Digite seu CPF" [(ngModel)]="auth.login" name="login" type="text" pattern="^(\d{3}\.\d{3}\.\d{3}-\d{2})|(\d{11})$" style="color: black"></ion-input>
+
+        <ion-input placeholder="Senha" type="password" [(ngModel)]="auth.senha" name="senha" style="color: black"></ion-input>
+
+        <ion-button expand="block" type="submit">Confirmar</ion-button>
+      </form>
+    </div>
+</ion-content>

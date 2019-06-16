@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/meu-inss"></ion-back-button>
+        </ion-buttons>
+        <ion-title>
+          Bem vindo, {{usuario}}
+        </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="width: 100%;">
+    <div class="card-sub-service fas fa-plus" routerLink="/acompanhamento" routerDirection="forward" >
+      <p >Acompanhamento</p>
+    </div>
+
+    <div class="card-sub-service fas fa-concierge-bell" routerLink="/novo-requerimento" routerDirection="forward" > 
+      <p>Novo Requerimento</p>
+    </div>
+  </div>
+</ion-content>
